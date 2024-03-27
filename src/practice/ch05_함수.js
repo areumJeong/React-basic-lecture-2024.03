@@ -4,7 +4,6 @@ const anony = function() {
 function named() {
   console.log('선언적 함수');
 }
-
 anony(); named();
 
 const arrow = () => {
