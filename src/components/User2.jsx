@@ -13,6 +13,7 @@ export default function User() {
     const existUser = users.find(user => user.id == form.id);
     const newUsers = [];
     if (existUser) {
+      setUsers(users.map(user => (user.id == form.id) ? form : user))
       for (let user of users)
         if (user.id == form.id)
           newUsers.push(form);
